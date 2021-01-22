@@ -1,0 +1,16 @@
+# Простые делители числа 13195 - это 5, 7, 13 и 29.
+# Каков самый большой делитель числа 600851475143, являющийся простым числом?
+
+num = 13195
+list_div = list(range(1,num))
+print(list_div)
+sim_div = []
+print(list_div)
+print(sim_div)
+
+for i in list_div:
+    if num % i == 0:
+        sim_div.append(i)
+print(sim_div)
+
+# ДОДЕЛАТЬ!
