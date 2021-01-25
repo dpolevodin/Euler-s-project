@@ -3,18 +3,18 @@
 # 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 # Найдите сумму всех четных элементов ряда Фибоначчи, которые не превышают четыре миллиона.
 
-sum_lim = 4000000
-fib_list = [1, 2, 3]
-sum_num = sum(fib_list)
+sum_lim = 4000001
+fib_list = [1, 2]
+result = []
+v = 0
+w = 1
 
-
-while fib_list[-1] < sum_lim:
-    j = fib_list[-1] + fib_list[-2]
+while fib_list[w] < sum_lim:
+    j = fib_list[v] + fib_list[w]
     fib_list.append(j)
-    sum_num = sum(fib_list[1::2])
-    print(fib_list)
-    
-#Сумма четных элементов ряда Фибоначчи, которые не превышают четыре миллиона.
-print(sum(fib_list[1::2]))
-
-#... Задача незаконченная, суммируется лишнее число. Правильный ответ: 4 613 732
+    v += 1
+    w += 1
+for k in fib_list:
+  if k % 2 == 0:
+    result.append(k) 
+print(sum(result))
