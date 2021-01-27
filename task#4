@@ -7,8 +7,8 @@ num_list = []
 result = []
 
 # Create a list with elements multiplied by each other
-for i in range(10,(999)):
-    for j in range(10,(999)):
+for i in range(100,999):
+    for j in range(100,999):
         num_list.append(i * j)
 
 word_list_str = map(str, num_list)
