@@ -1,8 +1,6 @@
 from datetime import datetime
 
 
-a =(datetime.now())
-
 def find_palindrom(min_range, max_range):
     result = []
     for i in range(min_range,max_range):
@@ -14,6 +12,3 @@ def find_palindrom(min_range, max_range):
     return print(max(result)) 
 
 find_palindrom(100, 1000)
-
-b =(datetime.now())
-print(b-a)
